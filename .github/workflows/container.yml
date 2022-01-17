@@ -20,7 +20,6 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - uses: actions/checkout@master
       - uses: shallwefootball/s3-upload-action@master
         with:
           aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
